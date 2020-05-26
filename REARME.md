@@ -1,1 +1,5 @@
-d fa
+# Introduction  
+In wireless communication (like your cell phone), bits are transmitted by encoding them in periodic analog waveforms called as radio signals. This process of mapping bits into analog signals is called modulation (see this link for more detail). Several modulation schemes have been developed over the years to help transmit the most amount of digital information possible. A transmitting source uses a pre-decided modulation scheme to communicate with a receiver. However, a receiver is immersed in a sea of signals (noise of all sorts get added up by the time it reaches the receiver). Your goal in this project is to build a classifier that predicts the modulation scheme that was used for encoding an incoming signal, given its samples over a short time interval.
+
+# Dataset  
+The training dataset contains 30k training examples where each training example is a collection of 1024 I/Q samples of a specific modulation scheme recorded through either a simulated or a real noisy channel. The test set is of the same format with 20k training examples. Class labels represent 10 types of modulation schemes namely one frequency modulation scheme FM, four amplitude modulation schemes AM-SSB-SC, AM-DSB-SC, OOK, 4ASK, and five phase modulation schemes BPSK, QPSK, OQPSK, 8PSK, 16PSK. You can refer to further details on this specific dataset in this paper.
